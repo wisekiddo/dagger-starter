@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "517674497891",
+    "firebase_url": "https://kiddo-architecture.firebaseio.com",
+    "project_id": "kiddo-architecture",
+    "storage_bucket": "kiddo-architecture.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:517674497891:android:584e8c6b98f46784",
+        "android_client_info": {
+          "package_name": "com.wisekiddo.daggerstarter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "517674497891-u24vvcqpvfch29qonm8urjmp2u3c8l3r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCN53skfJiD2Cdbk93V7G3I7Wu-mFKo39A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "517674497891-u24vvcqpvfch29qonm8urjmp2u3c8l3r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
