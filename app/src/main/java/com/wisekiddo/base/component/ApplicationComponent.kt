@@ -16,6 +16,7 @@ package com.wisekiddo.base.component
 import android.app.Application
 import com.wisekiddo.base.ProjectApplication
 import com.wisekiddo.base.module.ApplicationModule
+import com.wisekiddo.base.module.BindingModule
 import com.wisekiddo.base.module.ContextModule
 import dagger.BindsInstance
 import dagger.Component
@@ -25,8 +26,15 @@ import dagger.android.support.DaggerApplication
 import javax.inject.Singleton
 
 @Singleton
-@Component(modules = ([ContextModule::class, AndroidSupportInjectionModule::class, ApplicationModule::class]))
-interface ApplicationComponent: AndroidInjector<DaggerApplication> {
+@Component(modules = (
+        [
+            ContextModule::class,
+            AndroidSupportInjectionModule::class,
+            ApplicationModule::class,
+            BindingModule::class
+        ]))
+
+interface ApplicationComponent : AndroidInjector<DaggerApplication> {
 
     fun inject(application: ProjectApplication)
 
@@ -35,6 +43,7 @@ interface ApplicationComponent: AndroidInjector<DaggerApplication> {
 
         @BindsInstance
         fun application(application: Application): Builder
+
         fun build(): ApplicationComponent
     }
 }

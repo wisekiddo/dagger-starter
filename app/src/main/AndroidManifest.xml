@@ -2,7 +2,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           package="com.wisekiddo.daggerstarter">
 
-    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="d2f8bdf97892b03a17db1070d451b1bc2756be7a"/>
 
     <application
             android:name="com.wisekiddo.base.ProjectApplication"
@@ -12,7 +16,9 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".features.splash.SplashActivity">
+        </activity>
+        <activity android:name=".features.main.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
@@ -20,8 +26,5 @@
             </intent-filter>
         </activity>
     </application>
-    <meta-data
-            android:name="io.fabric.ApiKey"
-            android:value="d2f8bdf97892b03a17db1070d451b1bc2756be7a"
-    />
+
 </manifest>

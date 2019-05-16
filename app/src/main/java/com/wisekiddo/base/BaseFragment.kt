@@ -33,9 +33,10 @@ abstract class BaseFragment<A> : DaggerFragment() where A : AppCompatActivity {
         return layoutInflater.inflate(layoutRes(), container, false)
     }
 
-    @Suppress("UNCHECKED_CAST")
-    override fun onAttach(context: Context?) {
+    override fun onAttach(context: Context) {
         super.onAttach(context)
         activity = context as A
     }
+
+
 }
