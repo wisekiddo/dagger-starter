@@ -11,17 +11,19 @@
  * limitations under the License.
  */
 
-package com.wisekiddo.base.module
+package com.wisekiddo.base
 
-import android.app.Application
-import android.content.Context
-import dagger.Binds
-import dagger.Module
+import android.os.Bundle
+import androidx.annotation.LayoutRes
+import dagger.android.support.DaggerAppCompatActivity
 
+abstract class BaseActivity : DaggerAppCompatActivity() {
 
-@Module
-abstract class ContextModule {
+    @LayoutRes
+    protected abstract fun layoutRes(): Int
 
-    @Binds
-    internal abstract fun provideContext(application: Application): Context
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(layoutRes())
+    }
 }
