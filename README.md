@@ -1,4 +1,4 @@
-# dagger-starter
+# Dagger Starter
 Starting a Dagger Implementation example
 
 ### Procedure
