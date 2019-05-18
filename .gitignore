@@ -16,3 +16,5 @@ google-services.json
 /.idea/*
 /.idea/sonarlint/issuestore/*
 /.idea/sonarlint/*
+/.idea/misc.xml
+/.idea/sonarlint/issuestore/index.pb
